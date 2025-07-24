@@ -54,7 +54,14 @@ export default defineConfig((/* ctx */) => {
       // distDir
 
       // extendViteConf (viteConf) {},
-      // viteVuePluginOptions: {},
+      viteVuePluginOptions: {
+        template: {
+          compilerOptions: {
+            // treat all tags with a dash as custom elements
+            isCustomElement: (tag) => tag.includes('swiper')
+          }
+        }
+      },
 
       vitePlugins: [
         [
