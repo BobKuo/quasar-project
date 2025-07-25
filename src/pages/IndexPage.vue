@@ -3,13 +3,12 @@
     <!-- Swiper Container -->
     <!--
 
-
+space-between="10"
     parallax="true"
     -->
     <swiper-container
       ref="swiperRef"
       slides-per-view="2"
-      space-between="10"
       speed="600"
       navigation="true"
       pagination-clickable="true"
@@ -24,17 +23,10 @@
         data-swiper-parallax="-23%"
       ></div>
       <swiper-slide>
-        <div class="title" data-swiper-parallax="-300">Slide 1</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-        <div class="text" data-swiper-parallax="-100">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit,
-            sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor.
-            Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh
-            euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit.
-            Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non
-            eros quis feugiat.
-          </p>
+        <div class="card">
+          <img src="https://rprojectjapan.com/assets/images/top/exhibition/story_image_1.webp" />
+          <div class="title" data-swiper-parallax="-300">STORY</div>
+          <div class="subtitle" data-swiper-parallax="-200">01</div>
         </div>
       </swiper-slide>
       <swiper-slide>
@@ -115,15 +107,35 @@ swiper-slide {
   box-sizing: border-box;
   padding: 40px 60px;
 
+  .card {
+    width: 100%;
+    height: 40%;
+    border: 5px solid cyan;
+
+    position: relative;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+  }
   .title {
-    font-size: 41px;
-    font-weight: 300;
-  }
+    font-size: 17px;
+    font-weight: 1000;
 
+    position: absolute;
+    top: 50%;
+    left: -12%;
+  }
   .subtitle {
-    font-size: 21px;
-  }
+    font-size: 55px;
 
+    position: absolute;
+    top: 57%;
+    left: -12%;
+    text-decoration: underline;
+  }
   .text {
     font-size: 14px;
     max-width: 400px;
