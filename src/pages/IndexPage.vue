@@ -30,33 +30,20 @@ space-between="10"
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="title" data-swiper-parallax="-300">Slide 2</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-        <div class="text" data-swiper-parallax="-100">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit,
-            sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor.
-            Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh
-            euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit.
-            Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non
-            eros quis feugiat.
-          </p>
+        <div class="card">
+          <img src="https://rprojectjapan.com/assets/images/top/exhibition/story_image_1.webp" />
+          <div class="title" data-swiper-parallax="-300">STORY</div>
+          <div class="subtitle" data-swiper-parallax="-200">02</div>
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="title" data-swiper-parallax="-300">Slide 3</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-        <div class="text" data-swiper-parallax="-100">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit,
-            sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor.
-            Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh
-            euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit.
-            Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non
-            eros quis feugiat.
-          </p>
+        <div class="card">
+          <img src="https://rprojectjapan.com/assets/images/top/exhibition/story_image_1.webp" />
+          <div class="title" data-swiper-parallax="-300">STORY</div>
+          <div class="subtitle" data-swiper-parallax="-200">03</div>
         </div>
       </swiper-slide>
+
       <!-- <swiper-slide><img src="https://picsum.photos/800/600/?random=10" /></swiper-slide>
     <swiper-slide><img src="https://picsum.photos/400/300/?random=11" /></swiper-slide>
     <swiper-slide><img src="https://picsum.photos/800/600/?random=12" /></swiper-slide> -->
@@ -105,15 +92,24 @@ swiper-slide {
   color: #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 40px 60px;
+  padding: 0px 60px;
+  position: relative;
 
   .card {
-    width: 100%;
-    height: 40%;
+    width: 90%;
+    height: 50%;
     border: 5px solid cyan;
 
     position: relative;
+    /* position: absolute;
+    top: 0%;
+    left: 0%; */
   }
+  /* .card :nth-child(2n) {
+    bottom: 0%;
+    left: 0%;
+  } */
+
   img {
     width: 100%;
     height: 100%;
@@ -125,15 +121,15 @@ swiper-slide {
     font-weight: 1000;
 
     position: absolute;
-    top: 50%;
-    left: -12%;
+    top: 53%;
+    left: -7%;
   }
   .subtitle {
     font-size: 55px;
 
     position: absolute;
     top: 57%;
-    left: -12%;
+    left: -7%;
     text-decoration: underline;
   }
   .text {
